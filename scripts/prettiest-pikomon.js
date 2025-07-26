@@ -1,7 +1,7 @@
 import { database } from './database.js'
 
-export const pikomonCards = () => {
-    return database.map(card => 
+export const kittyCards = () => {
+    return database.kitty.map(card => 
             `<div class="piko-card">
                 <img src= "${card.imageUrl}" alt="${card.name} image" class="piko-img">
                 <h2>${card.name}!</h2>

@@ -1,8 +1,11 @@
-#title {
+h1 {
     text-align: center;
     font-family: copperplate;
     font-size: 5em;
     margin-top: 1rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #container {
@@ -11,40 +14,53 @@
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
 .piko-card {
-    flex-basis: 25%;
+    flex-basis: 24%;
     margin: 3em;
+    background: linear-gradient(
+        135deg,
+        #ffcc00 0%,   /* Pikachu yellow */
+        #ff66cc 25%,  /* Fairy pink */
+        #66ccff 50%,  /* Water blue */
+        #99ff99 75%,  /* Grass green */
+        #ffcc00 100%  /* loops back to yellow */
+    );
+    border-radius: 1em;
+    padding-bottom: 1em;
 }
 
 .piko-img {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1rem;
     border-radius: 1em;
 }
 
-.piko-info {
-    padding-left: 1.25rem;
+
+.piko-card h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: copperplate;
+    margin: 5px 0;
+    text-align: center;
 }
 
-.info-text {
-    font-family: monospace;
+.piko-card h3 {
     font-size: 1rem;
+    font-weight: bold;
+    font-family: copperplate;
+    margin: 5px 0;
+    padding-left: 1em;
+    text-align: left;
 }
 
-.piko-name {
-    font-family: "copperplate", fantasy;
-    font-size: 1.5em;
-}
-
-.piko-abilities {
-
-}
-
-.piko-category {
-
-}
-
-.piko-weakness {
-
+.piko-card p {
+    font-size: 0.9rem;
+    font-family: 'Merriweather';
+    margin: 3px 0;
+    padding-left: 1rem;
 }
